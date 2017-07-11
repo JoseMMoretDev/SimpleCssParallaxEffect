@@ -1,0 +1,12 @@
+#Adjust default time zone 
+	SetEnv TZ Europe/Madrid
+	AddDefaultCharset utf-8
+
+ 
+
+## REESCRITURA
+	RewriteEngine On
+	Options +FollowSymlinks
+
+	RewriteRule ^servicios/(.*)/ index.php?sec=$1 [NC,L] 
+	RewriteRule ^contacto/(.*) index.php?sec=contacto/#$1 [NC,L]

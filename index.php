@@ -15,7 +15,7 @@ $tag = '';
 	<meta charset='UTF-8'>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Neucha" rel="stylesheet">
-	<link href="css/parallax.css" rel="stylesheet" type="text/css">
+	<link href="/ResponsiveParallax/css/parallax.css" rel="stylesheet" type="text/css">
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=m2d5J9wXrM">
 <link rel="icon" type="image/png" href="/favicon-32x32.png?v=m2d5J9wXrM" sizes="32x32">
@@ -29,50 +29,50 @@ $tag = '';
 	<meta name='description' content='description_HERE'>
 	<meta name='viewport' content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="js/parallax.min.js"></script>
+	<script src="/ResponsiveParallax/js/parallax.min.js"></script>
 </head>
 
 <body>
 
 <header>
 	<nav>
-		<a  id="menu-alogo" href="/"><div id="menu-logo" class="curl"></div></a>
+		<a  id="menu-alogo" href="/ResponsiveParallax/"><div id="menu-logo" class="curl"></div></a>
 		<ul id="menu-web">
-			<li><a class='' href="/#home">HOME</a></li>
-			<li><a class='' href="/#nosotros">NOSOTROS</a></li>
-			<li><a class='' href="/#servv">SERVICIOS</a>
+			<li><a class='' href="/ResponsiveParallax/#home">HOME</a></li>
+			<li><a class='' href="/ResponsiveParallax/#nosotros">ABOUT US</a></li>
+			<li><a class='' href="/ResponsiveParallax/#servv">SERVICES</a>
 				<ul>
-					<li><a href="/servicios/frio_industrial/">FRÍO INDUSTRIAL</a></li>
-					<li><a href="/servicios/climatizacion/">CLIMATIZACIÓN</a></li>
-					<li><a href="/servicios/electricidad/">ELECTRICIDAD</a></li>
-					<li><a href="/servicios/gas/">GAS</a></li>
-					<li><a href="/servicios/hosteleria/">HOSTELERÍA IND.</a></li>
-					<li><a href="/servicios/mantenimiento/">MANTENIMIENTO</a></li>
-					<li><a href="/servicios/proyectos/">PROYECTOS</a></li>
+					<li><a href="/ResponsiveParallax/servicios/frio_industrial/">INDUSTRIAL COLD</a></li>
+					<li><a href="/ResponsiveParallax/servicios/climatizacion/">CLIMATIZE</a></li>
+					<li><a href="/ResponsiveParallax/servicios/electricidad/">ELECTRICITY</a></li>
+					<li><a href="/ResponsiveParallax/servicios/gas/">GAS</a></li>
+					<li><a href="/ResponsiveParallax/servicios/hosteleria/">IND. HOSTELRY</a></li>
+					<li><a href="/ResponsiveParallax/servicios/mantenimiento/">MAINTENANCE</a></li>
+					<li><a href="/ResponsiveParallax/servicios/proyectos/">PROJECTS</a></li>
 				</ul>
 			</li>
-			<li><a class='' href="/#contacto">CONTACTO</a></li>
+			<li><a class='' href="/ResponsiveParallax/#contacto">CONTACT</a></li>
 		</ul>
 
 		<select id="menu-mobil" onchange="location=this.value;">
-			<option value="/#home">	HOME </option> 
-			<option value="/#nosotros"> NOSOTROS </option>
-			<option value="/#servv"> SERVICIOS </option> 
-				<option value="/servicios/frio_industrial/" <?php if(isset($_GET['sec']) && $_GET['sec']=='frio_industrial') echo 'selected="selected"'; ?> >
-					· FRÍO INDUSTRIAL </option> 
-				<option value="/servicios/climatizacion/" <?php if(isset($_GET['sec']) && $_GET['sec']=='climatizacion') echo 'selected="selected"'; ?> >
-					· CLIMATIZACIÓN </option> 
-				<option value="/servicios/electricidad/" <?php if(isset($_GET['sec']) && $_GET['sec']=='electricidad') echo 'selected="selected"'; ?> >
-					· ELECTRICIDAD </option>
-				<option value="/servicios/gas/" <?php if(isset($_GET['sec']) && $_GET['sec']=='gas') echo 'selected="selected"'; ?> >
+			<option value="/ResponsiveParallax/#home">	HOME </option> 
+			<option value="/ResponsiveParallax/#nosotros"> ABOUT US </option>
+			<option value="/ResponsiveParallax/#servv"> SERVICES </option> 
+				<option value="/ResponsiveParallax/servicios/frio_industrial/" <?php if(isset($_GET['sec']) && $_GET['sec']=='frio_industrial') echo 'selected="selected"'; ?> >
+					· INDUSTRIAL COLD </option> 
+				<option value="/ResponsiveParallax/servicios/climatizacion/" <?php if(isset($_GET['sec']) && $_GET['sec']=='climatizacion') echo 'selected="selected"'; ?> >
+					· CLIMATIZE </option> 
+				<option value="/ResponsiveParallax/servicios/electricidad/" <?php if(isset($_GET['sec']) && $_GET['sec']=='electricidad') echo 'selected="selected"'; ?> >
+					· ELECTRICITY </option>
+				<option value="/ResponsiveParallax/servicios/gas/" <?php if(isset($_GET['sec']) && $_GET['sec']=='gas') echo 'selected="selected"'; ?> >
 		 			· GAS </option> 
-				<option value="/servicios/hosteleria/" <?php if(isset($_GET['sec']) && $_GET['sec']=='hosteleria') echo 'selected="selected"'; ?> >
-					· HOSTELERÍA INDUST. </option> 
-				<option value="/servicios/mantenimiento/" <?php if(isset($_GET['sec']) && $_GET['sec']=='mantenimiento') echo 'selected="selected"'; ?> >
-					· MANTENIMIENTO </option> 
-				<option value="/servicios/proyectos/" <?php if(isset($_GET['sec']) && $_GET['sec']=='proyectos') echo 'selected="selected"'; ?> >
-					· PROYECTOS </option>
-			<option value="/#contacto"> CONTACTO </option>
+				<option value="/ResponsiveParallax/servicios/hosteleria/" <?php if(isset($_GET['sec']) && $_GET['sec']=='hosteleria') echo 'selected="selected"'; ?> >
+					· INDUST. HOSTELRY </option> 
+				<option value="/ResponsiveParallax/servicios/mantenimiento/" <?php if(isset($_GET['sec']) && $_GET['sec']=='mantenimiento') echo 'selected="selected"'; ?> >
+					· MAINTENANCE </option> 
+				<option value="/ResponsiveParallax/servicios/proyectos/" <?php if(isset($_GET['sec']) && $_GET['sec']=='proyectos') echo 'selected="selected"'; ?> >
+					· PROJECTS </option>
+			<option value="/ResponsiveParallax/#contacto"> CONTACT </option>
 		</select>
 	</nav>
 	
@@ -89,13 +89,13 @@ else require_once('din/home.php'); ?>
 </main>
 <footer class="black-grad">
 	<section class='pie'>
-		<img class="logoPie" src="img/logoN2.png" alt="logo" width="64" height="32">
-		<div class="textoPie"> Copyright © 2016 _ COMP Ltd _ 
+		<img class="logoPie" src="/ResponsiveParallax/img/logoN2.png" alt="logo" width="64" height="32">
+		<div class="textoPie"> Copyright © 2016 _ 
 			<a href="CondicionesUsoES.pdf" target="__blank" title="Ver cond. de uso">
-				Condiciones de uso.
+				Ver Condiciones de uso.
 			</a>
 		</div>
-		<img class="logoHstudio" src="img/logoHstudio.png" alt="Hstudio" width="32" height="32">
+		<img class="logoHstudio" src="/ResponsiveParallax/img/logoHstudio.png" alt="Hstudio" width="32" height="32">
 	</section>
 </footer> 
 

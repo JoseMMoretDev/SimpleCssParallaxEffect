@@ -1,4 +1,4 @@
-<?php if(!defined('INCLUDE_CHECK'))	require_once('/IBN/404.php'); 
+<?php if(!defined('INCLUDE_CHECK'))	require_once('../404.php'); 
 $servicio = getServicio($tag);
 ?>
 

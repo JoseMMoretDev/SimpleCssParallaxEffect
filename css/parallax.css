@@ -28,7 +28,7 @@ header:hover{
     display: none
 }
 #menu-logo{
-	background-image:url(../img/logo/logo.png);
+	background-image:url(../img/logoN.png);
 	-webkit-background-size:contain;-moz-background-size:contain;-o-background-size:contain;background-size:contain;
 	background-repeat:no-repeat;
 	height: 3em;
@@ -313,7 +313,13 @@ input:focus, textarea:focus {
 	background-image: linear-gradient(bottom, #fff 0%, #fcc 100%);
 	color:#e00000;
 }
-
+.red__border{
+    background-color: #d00000;
+    color: white;
+    text-align: center;
+    font-size: 1.7em;
+    line-height: 1.7em;
+}
 
 
 

@@ -180,6 +180,68 @@ function isCall()
 	return false;
 }
 
+function getServicio($tag)
+{
+	$servicio = array();
+	$ruta = 'http://'.$_SERVER["HTTP_HOST"].'/ResponsiveParallax/img/serv/';
+	switch ($tag)
+	{
+		case 'frio_industrial':
+			$servicio['imagename'] 	= $ruta . 'frio_industrial.jpg';
+			$servicio['titulo'] 	= 'INDUSTRIAL COLD';
+			$servicio['texto'] 		= 'Lorém ipsúm dolor sit amet, partem eirmod deseruisse te his, te vel qúaeque iudicabit. At bónorum accusam similique est. Cu doming atomorum qui, ñe per deniqúe hónestatis, ad mel illud ófficiis facilísis. Nam regione recusábo ne. Vím adhuc illum mázim eu, ad pérfecto accúsamus vís. 
+										Víx malis debitis id, pro cu iudico eripuit. Omnis audire eleífend ex pri, duo quém simul mólestie ei, no tamqúam noluissé phaedrúm has. Dícam ceteró repudiandae te séd, eum no porro explicari moderatius. Sit ut malorum ceteros suscípiantur, et sea vitaé veritus epicurei. Mundi atomorúm ex quo.';
+			break;
+		
+		case 'climatizacion':
+			$servicio['imagename'] 	= $ruta . 'climatizacion.jpg';
+			$servicio['titulo'] 	= 'CLIMATIZE';
+			$servicio['texto'] 		= 'Lorém ipsúm dolor sit amet, partem eirmod deseruisse te his, te vel qúaeque iudicabit. At bónorum accusam similique est. Cu doming atomorum qui, ñe per deniqúe hónestatis, ad mel illud ófficiis facilísis. Nam regione recusábo ne. Vím adhuc illum mázim eu, ad pérfecto accúsamus vís. 
+										Víx malis debitis id, pro cu iudico eripuit. Omnis audire eleífend ex pri, duo quém simul mólestie ei, no tamqúam noluissé phaedrúm has. Dícam ceteró repudiandae te séd, eum no porro explicari moderatius. Sit ut malorum ceteros suscípiantur, et sea vitaé veritus epicurei. Mundi atomorúm ex quo.';
+			break;	
+		
+		case 'electricidad':
+			$servicio['imagename'] 	= $ruta . 'electricidad.jpg';
+			$servicio['titulo'] 	= 'ELECTRICITY';
+			$servicio['texto'] 		= 'Lorém ipsúm dolor sit amet, partem eirmod deseruisse te his, te vel qúaeque iudicabit. At bónorum accusam similique est. Cu doming atomorum qui, ñe per deniqúe hónestatis, ad mel illud ófficiis facilísis. Nam regione recusábo ne. Vím adhuc illum mázim eu, ad pérfecto accúsamus vís. 
+										Víx malis debitis id, pro cu iudico eripuit. Omnis audire eleífend ex pri, duo quém simul mólestie ei, no tamqúam noluissé phaedrúm has. Dícam ceteró repudiandae te séd, eum no porro explicari moderatius. Sit ut malorum ceteros suscípiantur, et sea vitaé veritus epicurei. Mundi atomorúm ex quo.';
+			break;	
+		
+		case 'gas':
+			$servicio['imagename'] 	= $ruta . 'gas.jpg';
+			$servicio['titulo'] 	= 'GAS';
+			$servicio['texto'] 		= 'Lorém ipsúm dolor sit amet, partem eirmod deseruisse te his, te vel qúaeque iudicabit. At bónorum accusam similique est. Cu doming atomorum qui, ñe per deniqúe hónestatis, ad mel illud ófficiis facilísis. Nam regione recusábo ne. Vím adhuc illum mázim eu, ad pérfecto accúsamus vís. 
+										Víx malis debitis id, pro cu iudico eripuit. Omnis audire eleífend ex pri, duo quém simul mólestie ei, no tamqúam noluissé phaedrúm has. Dícam ceteró repudiandae te séd, eum no porro explicari moderatius. Sit ut malorum ceteros suscípiantur, et sea vitaé veritus epicurei. Mundi atomorúm ex quo.';
+			break;	
+		
+		case 'hosteleria':
+			$servicio['imagename'] 	= $ruta . 'hosteleria.jpg';
+			$servicio['titulo'] 	= 'HOSTELERY';
+			$servicio['texto'] 		= 'Lorém ipsúm dolor sit amet, partem eirmod deseruisse te his, te vel qúaeque iudicabit. At bónorum accusam similique est. Cu doming atomorum qui, ñe per deniqúe hónestatis, ad mel illud ófficiis facilísis. Nam regione recusábo ne. Vím adhuc illum mázim eu, ad pérfecto accúsamus vís. 
+										Víx malis debitis id, pro cu iudico eripuit. Omnis audire eleífend ex pri, duo quém simul mólestie ei, no tamqúam noluissé phaedrúm has. Dícam ceteró repudiandae te séd, eum no porro explicari moderatius. Sit ut malorum ceteros suscípiantur, et sea vitaé veritus epicurei. Mundi atomorúm ex quo.';
+			break;	
+		
+		case 'mantenimiento':
+			$servicio['imagename'] 	= $ruta . 'mantenimiento.jpg';
+			$servicio['titulo'] 	= 'MAINTENANCE';
+			$servicio['texto'] 		= 'Lorém ipsúm dolor sit amet, partem eirmod deseruisse te his, te vel qúaeque iudicabit. At bónorum accusam similique est. Cu doming atomorum qui, ñe per deniqúe hónestatis, ad mel illud ófficiis facilísis. Nam regione recusábo ne. Vím adhuc illum mázim eu, ad pérfecto accúsamus vís. 
+										Víx malis debitis id, pro cu iudico eripuit. Omnis audire eleífend ex pri, duo quém simul mólestie ei, no tamqúam noluissé phaedrúm has. Dícam ceteró repudiandae te séd, eum no porro explicari moderatius. Sit ut malorum ceteros suscípiantur, et sea vitaé veritus epicurei. Mundi atomorúm ex quo.';
+			break;	
+		
+		case 'proyectos':
+			$servicio['imagename'] 	= $ruta . 'proyectos.jpg';
+			$servicio['titulo'] 	= 'PROJECTS';
+			$servicio['texto'] 		= 'Lorém ipsúm dolor sit amet, partem eirmod deseruisse te his, te vel qúaeque iudicabit. At bónorum accusam similique est. Cu doming atomorum qui, ñe per deniqúe hónestatis, ad mel illud ófficiis facilísis. Nam regione recusábo ne. Vím adhuc illum mázim eu, ad pérfecto accúsamus vís. 
+										Víx malis debitis id, pro cu iudico eripuit. Omnis audire eleífend ex pri, duo quém simul mólestie ei, no tamqúam noluissé phaedrúm has. Dícam ceteró repudiandae te séd, eum no porro explicari moderatius. Sit ut malorum ceteros suscípiantur, et sea vitaé veritus epicurei. Mundi atomorúm ex quo.';
+			break;	
+		
+		default:
+			# code...
+			break;
+	}
+	return $servicio;
+}
+
 
 
 ?>
